@@ -10,33 +10,33 @@ const songs = [
     },
     {
         id:'2',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
+        songName: `Điêu Toa<br>
+        <div class="subtitle">Masew</div>`,
         poster:"./assets/masew.jpg"
     },
     {
         id:'3',
-        songName: `On My way<br>
-        <div class="subtitle">Alan walker</div>`,
-        poster:"./assets/imgae on my way.jpg"
+        songName: `Way back home<br>
+        <div class="subtitle">Shaun</div>`,
+        poster:"./assets/way back home shaun.jpg"
     },
     {
         id:'4',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
-        poster:"./assets/masew.jpg"
+        songName: `Cartoon<br>
+        <div class="subtitle">On&On</div>`,
+        poster:"./assets/cartoon onon.jpg"
     },
     {
         id:'5',
-        songName: `On My way<br>
-        <div class="subtitle">Alan walker</div>`,
-        poster:"./assets/imgae on my way.jpg"
+        songName: `I love you 3000<br>
+        <div class="subtitle">Stephanie Poetri</div>`,
+        poster:"./assets/i love you 3000 Stephanie Poetri.jpg"
     },
     {
         id:'6',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
-        poster:"./assets/masew.jpg"
+        songName: `Warriyo <br>
+        <div class="subtitle">Mortals/div>`,
+        poster:"./assets/warriyo mortals.jpg"
     },
     {
         id:'7',
@@ -46,33 +46,33 @@ const songs = [
     },
     {
         id:'8',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
+        songName: `Điêu Toa<br>
+        <div class="subtitle">Masew</div>`,
         poster:"./assets/masew.jpg"
     },
     {
         id:'9',
-        songName: `On My way<br>
-        <div class="subtitle">Alan walker</div>`,
-        poster:"./assets/imgae on my way.jpg"
+        songName: `Way back home<br>
+        <div class="subtitle">Shaun</div>`,
+        poster:"./assets/way back home shaun.jpg"
     },
     {
         id:'10',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
-        poster:"./assets/masew.jpg"
+        songName: `Cartoon<br>
+        <div class="subtitle">On&On</div>`,
+        poster:"./assets/cartoon onon.jpg"
     },
     {
         id:'11',
-        songName: `On My way<br>
-        <div class="subtitle">Alan walker</div>`,
-        poster:"./assets/imgae on my way.jpg"
+        songName: `I love you 3000<br>
+        <div class="subtitle">Stephanie Poetri</div>`,
+        poster:"./assets/i love you 3000 Stephanie Poetri.jpg"
     },
     {
         id:'12',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
-        poster:"./assets/masew.jpg"
+        songName: `Warriyo <br>
+        <div class="subtitle">Mortals/div>`,
+        poster:"./assets/warriyo mortals.jpg"
     },
     {
         id:'13',
@@ -82,27 +82,27 @@ const songs = [
     },
     {
         id:'14',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
+        songName: `Điêu Toa<br>
+        <div class="subtitle">Masew</div>`,
         poster:"./assets/masew.jpg"
     },
     {
         id:'15',
-        songName: `On My way<br>
-        <div class="subtitle">Alan walker</div>`,
-        poster:"./assets/imgae on my way.jpg"
+        songName: `Way back home<br>
+        <div class="subtitle">Shaun</div>`,
+        poster:"./assets/way back home shaun.jpg"
     },
     {
         id:'16',
-        songName: `Alan Walker-Fade <br>
-        <div class="subtitle">Alan Masew</div>`,
-        poster:"./assets/masew.jpg"
+        songName: `Cartoon<br>
+        <div class="subtitle">On&On</div>`,
+        poster:"./assets/cartoon onon.jpg"
     },
     {
         id:'17',
-        songName: `On My way<br>
-        <div class="subtitle">Alan walker</div>`,
-        poster:"./assets/imgae on my way.jpg"
+        songName: `I love you 3000<br>
+        <div class="subtitle">Stephanie Poetri</div>`,
+        poster:"./assets/i love you 3000 Stephanie Poetri.jpg"
     },
     {
         id:'18',
@@ -126,6 +126,8 @@ const songs = [
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element , i) =>{
      element.getElementsByTagName('img')[0].src = songs[i].poster;
+     console.log(element.getElementsByTagName('img')[0]);
+    //  console.log(element.getElementsByTagName('img')[0].src);
      element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 })
 
@@ -189,6 +191,7 @@ Array.from(document.getElementsByClassName('playlistPlay')).forEach((element) =>
             masterPlay.classList.remove('bi-pause-fill');
             masterPlay.classList.add('bi-play-fill');
             wave.classList.remove('active2');
+            makeAllPLays();
         } )
         makeAllBackgrounds();
         Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgba(105,105,170,.1)";

@@ -311,7 +311,7 @@ header .master_play .vol .bi{
     top: -17px;
     left: -30px;
 }
-header .master_play .vol input{
+header .master_play .vol input {
     position: absolute;
     width: 100%;
     top: -7px;
@@ -336,7 +336,7 @@ header .master_play .vol .dot{
     height: 5px;
     background: #36e2ec;
     border-radius: 50%;
-    left: 0%;
+    left: 50%;
     top: -1px;
     transition: 1s linear;
 }
